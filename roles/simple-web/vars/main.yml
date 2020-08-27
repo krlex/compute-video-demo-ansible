@@ -1,0 +1,3 @@
+installation_pkg:
+  - name: python-apt
+  - name: apache2
