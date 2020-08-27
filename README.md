@@ -1,3 +1,7 @@
+THIS IS FROM ORIGINAL:
+
+- [GCP-HUB](https://github.com/GoogleCloudPlatform/compute-video-demo-ansible)
+
 ## compute-video-demo-ansible
 
 This is the supporting documentation for
@@ -24,14 +28,14 @@ custom names but the *Project ID* is globally unique across all Google Cloud
 Platform customers.
 
 1. It's OK to create a Project first, but you will need to set up billing
-before you can create any virtual machines with Compute Engine. Find the menu icon at the top left, 
+before you can create any virtual machines with Compute Engine. Find the menu icon at the top left,
 then look for the *Billing* link in the navigation bar.
 
 1. In order for `ansible` to create Compute Engine instances, you'll need a
-[Service Account](https://cloud.google.com/compute/docs/access/service-accounts#serviceaccount). 
+[Service Account](https://cloud.google.com/compute/docs/access/service-accounts#serviceaccount).
 It's recommended that you create a new Service Account (don't use the default), called 'demo-ansible', for this demo.
-Make sure to create a new JSON formatted private key file for this Service Account. Also, note the *Email address* 
-of this Service Account (should be `demo-ansible@YOUR_PROJECT_ID.iam.gserviceaccount.com`) since 
+Make sure to create a new JSON formatted private key file for this Service Account. Also, note the *Email address*
+of this Service Account (should be `demo-ansible@YOUR_PROJECT_ID.iam.gserviceaccount.com`) since
 this will be required in the Ansible configuration files.
 
 1. Next you will want to install the
@@ -109,7 +113,7 @@ ansible-playbook -i ansible_hosts site.yml
 
 1. The output from this command will display the public IP address associated
 with your new load-balancer. You can also look in the Developers Console
-under *Networking &gt; Load balancing* and find the Forwarding Rules under the 
+under *Networking &gt; Load balancing* and find the Forwarding Rules under the
 "Advanced" menu.
 
 1. Ok, let's test it out! Put the public IP address of your load-balancer into
